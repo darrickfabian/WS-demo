@@ -1,0 +1,222 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+body {
+  color: #999;
+}
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.main-container {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-bottom: 1px solid #9b9b9b;
+}
+header {
+  img {
+    display: block;
+    margin: 19px auto 16px auto;
+  }
+}
+
+#main-nav {
+  ul {
+    width: 100%;
+    display: table;
+    list-style-type: none;
+    padding: 0px;
+    li {
+      display: table-cell;
+      width: auto !important;
+      text-align: center;
+      padding-right: 0px;
+      padding-left: 0px;
+      a {
+        display: block;
+        padding: 9px 10px;
+        font-size: 11px;
+        color: #fff;
+        background-color: #363636;
+        text-transform: uppercase;
+        text-decoration: none;
+        white-space: nowrap;
+        &:hover {
+          color: #363636;
+          background-color: #ccc;
+        }
+        &.home {
+          color: #fff;
+          background-color: #293659;
+          border-left: 1px solid #fff;
+        }
+      }
+
+    }
+  }
+}
+
+.breadcrumbs {
+  span {
+    font-size: 12px;
+    color: #999;
+    &.nested {
+      position: relative;
+      margin-left: 18px;
+      &::before {
+        content: '>';
+        font-size: 11px;
+        position: absolute;
+        top: -1px;
+        left: -14px;
+      }
+    }
+    &.current {
+      color: #565656;
+    }
+  }
+}
+.main-content {
+  padding: 15px 10px 30px 10px;
+  .gallery {
+    .thumbs {
+      margin-top: 45px;
+      img {
+        padding: 2px 8px;
+        margin-right: 2px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        &.active {
+          border: 2px solid #000;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  .desc {
+    h3 {
+      color: #565656;
+      font-size: 22px;
+      font-family: georgia, serif;
+      font-weight: 200;
+    }
+    p {
+      color: #999;
+    }
+    .price {
+      font-size: 18px;
+      color: #000;
+      margin: 20px 0px 10px 0px;
+    }
+    input {
+      width: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #000;
+      padding: 4px 0px;
+    }
+    button {
+      &.add-cart {
+        display: block;
+        width: 150px;
+        height: 41px;
+        border: 0px;
+        background: url('/images/button-add-to-cart.png') top left no-repeat;
+        margin: 17px 0px;
+        &:active,
+        &:focus {
+          border: 0px;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.accordion {
+  width: 100%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.accordion .accordion-head {
+  color: #fff;
+  border-bottom: 1px solid #dfdfdf;
+  position: relative;
+  padding: 10px 0px;
+  font-size: 0.87em;
+  cursor: pointer;
+  overflow: hidden;
+  &.open {
+    border-bottom: 1px solid transparent;
+  }
+}
+.accordion .accordion-head * {
+  cursor: pointer;
+}
+.accordion .accordion-head h4 {
+  float: left;
+  margin-left: 20px;
+  color: #565656;
+  font-family: georgia, serif;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.accordion .accordion-body {
+  border-bottom: 1px solid #fff;
+  padding: 0px 20px 10px 20px;
+  height: auto;
+  display: none;
+  margin-top: -10px;
+  &.open-first {
+    display: block;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  &.active {
+    border-bottom: 1px solid #dfdfdf;
+  }
+}
+.arrow {
+  width: 14px;
+  height: 14px;
+  margin-top: 11px;
+  background: url('/images/arrow-collapsed.png') top left no-repeat;
+}
+.accordion-head.open .arrow {
+  width: 14px;
+  height: 14px;
+  margin-top: 11px;
+  background: url('/images/arrow-expanded.png') top left no-repeat;
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+  background-color: #f1f1f1;
+  p,
+  span {
+    font-size: 11px;
+    color: #565656;
+    margin-bottom: 0px;
+  }
+}
+
+
+/* Responsive: 768px and up */
+@media screen and (min-width: 768px) {
+  .main-container {
+    max-width: 1010px;
+    margin: 0 auto;
+  }
+}
+
+/* Responsive: less than 768px */
+@media screen and (max-width: 767px) {
+  .main-container {
+    max-width: 100%;
+    width: 100%;
+  }
+}

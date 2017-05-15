@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WSI - Demo</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="main-container">
+      <header>
+        <img class="img-responsive" src="images/logo.png" width="237" alt="WSI Demo logo" />
+      </header>
+      <nav id="main-nav">
+        <ul class="clearfix">
+          <li><a href="/">Cookware</a></li>
+          <li><a href="/">Cook's Tools</a></li>
+          <li><a href="/">Cutlery</a></li>
+          <li><a href="/">Electronics</a></li>
+          <li><a href="/">Bakeware</a></li>
+          <li><a href="/">Food</a></li>
+          <li><a href="/">Tabletop &#38; Bar</a></li>
+          <li><a href="/">Homekeeping</a></li>
+          <li><a href="/">Outdoor</a></li>
+          <li><a href="/">Sale</a></li>
+          <li><a class="home" href="/">Williams-Sonoma Home</a></li>
+        </ul>
+      </nav>
+      <div class="breadcrumbs">
+        <span>Home</span>
+        <span class="nested">Homekeeping</span>
+        <span class="nested">Aprons</span>
+        <span class="nested">Adult Aprons</span>
+        <span class="nested current">Williams-Sonoma Classic Apron</span>
+      </div>
+      <div class="row main-content">
+        <section class="col-xs-12 col-sm-6 prod">
+          <div class="gallery">
+            <div class="panel">
+              <img id="largeImage" src="images/product-large-a.jpg" />
+            </div>
+            <div class="thumbs">
+                  <img class="active" src="images/product-small-a.jpg" alt="Williams-Sonoma Classic Apron, French Blue" />
+                  <img src="images/product-small-b.jpg" alt="Williams-Sonoma Classic Apron, Black" />
+                  <img src="images/product-small-c.jpg" alt="Williams-Sonoma Classic Apron, Green" />
+                  <img src="images/product-small-d.jpg" alt="Williams-Sonoma Classic Apron, Red" />
+            </div>
+          </div>
+
+        </section>
+        <section class="col-xs-12 col-sm-6 desc">
+          <h3 id="product-description">Williams-Sonoma Classic Apron, French Blue</h3>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
+          <ul>
+            <li>Sed ut perspiciatis unde omnis.</li>
+            <li>Ut enim ad minima veniam.</li>
+            <li>Quis autem vel eum iure.</li>
+            <li>Nemo enim ipsam voluptatem.</li>
+          </ul>
+          <div class="price">
+            <span>$</span><span id="result">19.95</span>
+          </div>
+          <input value="1" id="product" type="number" />
+          <button class="add-cart"></button>
+          <div class="accordion">
+            <div class="accordion-head open">
+              <h4>Expanded</h4><div class="arrow down"></div>
+            </div>
+            <div class="accordion-body open-first">
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+            </div>
+            <div class="accordion-head">
+          	  <h4>Collapsed</h4><div class="arrow down"></div>
+            </div>
+            <div class="accordion-body">
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+            </div>
+            <div class="accordion-head">
+              <h4>Collapsed</h4><div class="arrow down"></div>
+            </div>
+            <div class="accordion-body">
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+            </div>
+        </div>
+        </section>
+      </div>
+    </div>
+    <div>
+      <footer>
+        <p>&copy; At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis | Voluptatum Deleniti | Odio Dignissimos</p>
+      </footer>
+    </div>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
